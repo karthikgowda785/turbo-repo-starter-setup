@@ -4,17 +4,28 @@ A modern monorepo setup with a shared UI component library and React application
 
 ## 📁 Project Structure
 
-my-monorepo/
-├── apps/
-│ └── app1/ # Main React application
-│ ├── src/ # Application source code
-│ └── package.json
-├── packages/
-│ └── ui/ # Shared UI component library
-│ ├── src/ # UI components
-│ └── package.json
-├── package.json # Root package.json
-└── turbo.json # Turborepo configuration
+
+my-monorepo  
+├─ apps  
+│ └─ app1  
+│ ├─ src  
+│ │ ├─ App.tsx  
+│ │ ├─ main.tsx  
+│ │ └─ index.css  
+│ ├─ package.json  
+│ ├─ postcss.config.js  
+│ └─ tailwind.config.js  
+├─ packages  
+│ └─ ui  
+│ ├─ src  
+│ │ ├─ Button.tsx  
+│ │ ├─ index.ts  
+│ │ └─ styles.css  
+│ ├─ package.json  
+│ ├─ postcss.config.js  
+│ └─ tailwind.config.ts  
+├─ package.json  
+└─ turbo.json  
 
 ## 🚀 Features
 
