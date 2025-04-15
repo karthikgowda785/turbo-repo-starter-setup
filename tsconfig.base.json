@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".", // Use the root as the base URL for module resolution
+      "paths": {
+        "@ui/*": ["packages/ui/src/*"] // Alias for the UI package
+      },
+      "target": "ESNext", // Modern JS features
+      "module": "ESNext", // ESM (ECMAScript modules)
+      "moduleResolution": "Node", // Node-style resolution
+      "jsx": "react-jsx", // React JSX support
+      "strict": true // Enable strict type checking
+    }
+  }
+  

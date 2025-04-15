@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.base.json", // Inherit base config from root
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Store build info
+    "target": "ES2020", // Use ECMAScript 2020 features
+    "useDefineForClassFields": true, // Ensure fields in classes are defined
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Include necessary libraries
+    "module": "ESNext", // Use ES Modules
+    "skipLibCheck": true, // Skip type checking of libraries for faster build
+
+    /* Bundler-specific configurations */
+    "moduleResolution": "bundler", // Use bundler resolution for Vite or similar
+    "allowImportingTsExtensions": true, // Allow importing files with .ts extensions
+    "isolatedModules": true, // Ensure each file can be independently transpiled
+    "moduleDetection": "force", // Force module detection
+    "noEmit": true, // Do not emit JavaScript files
+    "jsx": "react-jsx", // Use React JSX transformation
+
+    /* Linting and Type Checking */
+    "strict": true, // Enable strict type checking
+    "noUnusedLocals": true, // Error on unused local variables
+    "noUnusedParameters": true, // Error on unused function parameters
+    "noFallthroughCasesInSwitch": true, // Disallow fallthrough in switch statements
+    "noUncheckedSideEffectImports": true // Prevent unchecked side effects from imports
+  },
+  "include": [
+    "src/**/*", // Include app1's source files
+    "../../packages/ui/src/**/*" // Include UI package's source files
+  ]
+}
